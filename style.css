@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.669); /* Semi-transparent white background */
+    padding: 20px;
+    width: 350px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    backdrop-filter: blur(20px); /* Glass effect */
+    position: relative;
+    overflow: hidden;
+}
+form::before, form::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+form::before {
+    top: -20px;
+    left: -20px;
+}
+
+form::after {
+    bottom: -20px;
+    right: -20px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} 
+
+button{
+    padding: 10px;
+    background-color:#007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #8b33a9;
+}
+.user-list {
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
